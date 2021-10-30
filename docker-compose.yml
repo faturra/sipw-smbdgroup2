@@ -1,0 +1,39 @@
+#----About APP----
+# SMBD Group 2 SIPW (Sistem Informasi Pendaftaran Wisuda)
+# Saturday, 09 October 2021 14.59
+# https://www.faturrachmanmochammad.id
+# V.1.0.0.0 20211023
+
+version: "3.9"
+   
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  django_gunicorn:
+    volumes:
+      - static:/static
+    env_file:
+      - .env
+    build:
+      context: .
+    ports:
+      - "8110:8110"
+  nginx:
+    build: ./nginx
+    volumes:
+      - static:/static
+    ports:
+      - "80:80"
+    depends_on:
+      - django_gunicorn
+      - db
+
+volumes:
+  static:
+

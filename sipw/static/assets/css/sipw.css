@@ -1,0 +1,9 @@
+#wave_lg {
+    display: block;
+    height: auto;
+    background-color: beige;
+    background-image: url('static/assets/gui/waves/wave_lg.svg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center center;
+}
