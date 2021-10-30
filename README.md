@@ -8,10 +8,9 @@
 
 # Usage
 
-* Run services in the background:
+* Run services :
 `docker-compose up -d`
-
-* Or run services in the foreground:
+or run services in the foreground:
 `docker-compose up --build`
 
 * Inspect volume:
