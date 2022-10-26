@@ -3,7 +3,7 @@
 * SIPW (Sistem Informasi Pendaftaran Wisuda)
 * Saturday, 09 October 2021 14.59
 * https://www.faturrachmanmochammad.id
-* V.1.0.0.0
+* V1.5.0-alpha
 
 
 # Usage
