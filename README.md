@@ -3,4 +3,4 @@ SIPW (Sistem Informasi Pendaftaran Wisuda)
 --
 *About APP*
 - V1.5.0-alpha
-- https://sipw.faturrachmanmochammad.id
+- https://sipw-smbdgroup2.faturrachmanmochammad.id/
